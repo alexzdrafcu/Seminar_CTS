@@ -23,7 +23,7 @@ public abstract class AplicantReader {
 		int varsta = scanner.nextInt();
 		int punctaj = scanner.nextInt();
 		int nrProiecte = scanner.nextInt();
-		String[] denumiriProiecte = new String[5];
+		String[] denumiriProiecte = new String[nrProiecte];
 		for (int i = 0; i < nrProiecte; i++)
 			denumiriProiecte[i] = scanner.next();
 		aplicant.setNume(nume);
