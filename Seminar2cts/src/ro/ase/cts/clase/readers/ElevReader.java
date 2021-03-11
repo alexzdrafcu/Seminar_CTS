@@ -21,18 +21,13 @@ public class ElevReader extends AplicantReader {
 		List<Aplicant> elevi = new ArrayList<Aplicant>();
 
 		while (input2.hasNext()) {
-			String nume = input2.next();
-			String prenume = input2.next();
-			int varsta = input2.nextInt();
-			int punctaj = input2.nextInt();
-			int nr = input2.nextInt();
-			String[] vect = new String[5];
-			for (int i = 0; i < nr; i++)
-				vect[i] = input2.next();
+			Elev angajat = new Elev();
+			super.readAplicant(input2, angajat);
 			int clasa = input2.nextInt();
 			String tutore = input2.next();
-			Elev e = new Elev(nume, prenume, varsta, punctaj, nr, vect, clasa, tutore);
-			elevi.add(e);
+			angajat.setClasa(clasa);
+			angajat.setTutore(tutore);
+			elevi.add(angajat);
 		}
 
 		input2.close();
