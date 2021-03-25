@@ -5,7 +5,7 @@ import ro.ase.cts.simplefactory.clase.PersonalSpital;
 import ro.ase.cts.simplefactory.clase.TipPersonal;
 
 public class Main {
-
+	//problema A2
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
